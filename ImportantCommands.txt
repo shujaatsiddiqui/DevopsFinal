@@ -16,13 +16,17 @@ back from heroku to main
 =========================
 git checkout main
 
+login to heroku
+================
+heroku container:login
+
 push image to heroku
 =======================
 heroku container:push web
 
-login to heroku
-================
-heroku container:login
+release image to create web
+==============================
+heroku container:release web
 
 restart heroku app
 ====================
@@ -31,3 +35,7 @@ heroku restart -a devops10p
 open heroku
 ================
 heroku open
+
+
+notes:
+dockerfile shuld be renamed to Dockerfile	

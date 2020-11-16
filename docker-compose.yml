@@ -7,7 +7,7 @@ services:
       - "5000:5000"
     container_name: node-api
     volumes:
-       - ./Server:/usr/src/api
+       - ./:/usr/src/api
        - /usr/src/api/node_modules
   react-ui:
     build:
@@ -17,5 +17,5 @@ services:
     container_name: react-ui
     stdin_open: true
     volumes:
-       - ./Server/client:/usr/src/app
+       - ./client:/usr/src/app
        - /usr/src/app/node_modules

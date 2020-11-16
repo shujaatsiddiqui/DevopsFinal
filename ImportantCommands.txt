@@ -1,0 +1,33 @@
+shujaatsiddiqui
+
+muslim1971..
+
+https://devops10p.herokuapp.com/ | https://git.heroku.com/devops10p.git
+
+
+from main to heroku
+======================
+git remote set-url heroku https://git.heroku.com/devops10p.git
+switch to branch release
+=======================
+git checkout release
+
+back from heroku to main
+=========================
+git checkout main
+
+push image to heroku
+=======================
+heroku container:push web
+
+login to heroku
+================
+heroku container:login
+
+restart heroku app
+====================
+heroku restart -a devops10p
+
+open heroku
+================
+heroku open

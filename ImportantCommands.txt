@@ -16,6 +16,10 @@ back from heroku to main
 =========================
 git checkout main
 
+switch to existing repo
+===========================
+heroku git:remote -a devopsfinal10p
+
 login to heroku
 ================
 heroku container:login
@@ -30,7 +34,7 @@ heroku container:release web
 
 restart heroku app
 ====================
-heroku restart -a devops10p
+heroku restart -a appname
 
 open heroku
 ================
@@ -39,3 +43,8 @@ heroku open
 
 notes:
 dockerfile shuld be renamed to Dockerfile	
+
+
+things left:
+=============
+directly deploy on heroku from git actions

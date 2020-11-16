@@ -2,6 +2,7 @@ FROM node:12
 
 # Create app directory
 ADD ./ /usr/src/api
+
 WORKDIR /usr/src/api
 
 # Install app dependencies

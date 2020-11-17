@@ -1,9 +1,8 @@
 FROM node:12
 
 # Create app directory
-COPY ./ /usr/src/api
-
-WORKDIR /usr/src/api
+COPY ./ /usr/src/app
+WORKDIR /usr/src/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -17,6 +16,6 @@ RUN npm install
 # Bundle app source
 #COPY . .
 
-EXPOSE 5000
+EXPOSE 3080
 
-CMD [ "node", "server.js"]
+CMD [ "npm", "start"]
